@@ -1,35 +1,35 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function StaffPicks() {
   const articles = [
     {
-      title: "Can you catch the expression of the whale?",
-      date: "March 15, 2024",
+      title: 'Can you catch the expression of the whale?',
+      date: 'March 15, 2024',
       category: "Staff's Picks",
-      image: "/sliderImage/1.jpg",
-      slug: "whale-expression",
+      image: '/sliderImage/1.jpg',
+      slug: 'whale-expression',
     },
     {
-      title: "What art thrusting that thief-catcher into my face?",
-      date: "January 22, 2024",
+      title: 'What art thrusting that thief-catcher into my face?',
+      date: 'January 22, 2024',
       category: "Staff's Picks",
-      image: "/sliderImage/2.jpg",
-      slug: "thief-catcher",
+      image: '/sliderImage/2.jpg',
+      slug: 'thief-catcher',
     },
     {
-      title: "The man liberally provides the brains",
-      date: "August 23, 2023",
+      title: 'The man liberally provides the brains',
+      date: 'August 23, 2023',
       category: "Staff's Picks",
-      image: "/sliderImage/3.jpg",
-      slug: "brains",
+      image: '/sliderImage/3.jpg',
+      slug: 'brains',
     },
     {
-      title: "Can you catch the expression of the whale?",
-      date: "March 15, 2024",
+      title: 'Can you catch the expression of the whale?',
+      date: 'March 15, 2024',
       category: "Staff's Picks",
-      image: "/sliderImage/1.jpg",
-      slug: "whale-expression",
+      image: '/sliderImage/1.jpg',
+      slug: 'whale-expression',
     },
   ];
   return (
@@ -81,7 +81,7 @@ export function StaffPicks() {
               <Link
                 key={index}
                 href={`/articles/`}
-                className={"flex items-start gap-5"}
+                className={'flex items-start gap-5'}
               >
                 <div className="w-52 h-52 md:aspect-[1/1]">
                   <Image

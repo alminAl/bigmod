@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface ArrowIconType {
   width?: string | number;
@@ -6,8 +6,8 @@ interface ArrowIconType {
   className?: string;
 }
 const Arrow: React.FC<ArrowIconType> = ({
-  width = "20",
-  height = "20",
+  width = '20',
+  height = '20',
   className,
 }) => {
   return (

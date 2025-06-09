@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface Progress90IconType {
   width?: string | number;
@@ -7,8 +7,8 @@ interface Progress90IconType {
 }
 
 const Progress90Icon: React.FC<Progress90IconType> = ({
-  width = "238",
-  height = "238",
+  width = '238',
+  height = '238',
   className,
 }) => {
   return (

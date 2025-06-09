@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import * as React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 interface Slide {
   id: string;
@@ -14,28 +14,28 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    id: "1",
-    number: "01",
-    title: "Research & Planning",
-    image: "/sliderImage/3.jpg",
+    id: '1',
+    number: '01',
+    title: 'Research & Planning',
+    image: '/sliderImage/3.jpg',
   },
   {
-    id: "2",
-    number: "02",
-    title: "Brainstorm & Wirefirm",
-    image: "/sliderImage/1.jpg",
+    id: '2',
+    number: '02',
+    title: 'Brainstorm & Wirefirm',
+    image: '/sliderImage/1.jpg',
   },
   {
-    id: "3",
-    number: "03",
-    title: "Design & Development",
-    image: "/sliderImage/2.jpg",
+    id: '3',
+    number: '03',
+    title: 'Design & Development',
+    image: '/sliderImage/2.jpg',
   },
   {
-    id: "4",
-    number: "04",
-    title: "Design & Development",
-    image: "/sliderImage/1.jpg",
+    id: '4',
+    number: '04',
+    title: 'Design & Development',
+    image: '/sliderImage/1.jpg',
   },
 ];
 
@@ -68,8 +68,8 @@ export function WorkProcessSlider() {
             <button
               onClick={previousSlide}
               className={cn(
-                " left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-black/50 p-2 text-white transition-all hover:bg-black/75",
-                currentSlide === 0 && "opacity-50"
+                ' left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-black/50 p-2 text-white transition-all hover:bg-black/75',
+                currentSlide === 0 && 'opacity-50'
               )}
               disabled={currentSlide === 0}
             >
@@ -79,8 +79,8 @@ export function WorkProcessSlider() {
             <button
               onClick={nextSlide}
               className={cn(
-                " right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-black/50 p-2 text-white transition-all hover:bg-black/75",
-                currentSlide === slides.length - 1 && "opacity-50"
+                ' right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-black/50 p-2 text-white transition-all hover:bg-black/75',
+                currentSlide === slides.length - 1 && 'opacity-50'
               )}
               disabled={currentSlide === slides.length - 1}
             >
@@ -94,7 +94,7 @@ export function WorkProcessSlider() {
             className={`transition-transform duration-500 ease-in-out `}
             style={{
               transform: `translateX(-${currentSlide * 100}%)`,
-              display: "flex",
+              display: 'flex',
             }}
           >
             {slides.map((slide) => (

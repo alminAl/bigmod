@@ -1,31 +1,31 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Featured = () => {
   const projects = [
     {
-      name: "Portfolio Website",
-      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      link: "/projects/portfolio",
-      image: "/p1.png",
+      name: 'Portfolio Website',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      link: '/projects/portfolio',
+      image: '/p1.png',
     },
     {
-      name: "E-Commerce Store",
-      tags: ["React", "Redux", "Node.js", "MongoDB"],
-      link: "/projects/ecommerce",
-      image: "/p2.jpg",
+      name: 'E-Commerce Store',
+      tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
+      link: '/projects/ecommerce',
+      image: '/p2.jpg',
     },
     {
-      name: "Blog Platform",
-      tags: ["Next.js", "GraphQL", "Apollo Client", "Prisma"],
-      link: "/projects/blog-platform",
-      image: "/p3.jpg",
+      name: 'Blog Platform',
+      tags: ['Next.js', 'GraphQL', 'Apollo Client', 'Prisma'],
+      link: '/projects/blog-platform',
+      image: '/p3.jpg',
     },
     {
-      name: "Task Manager",
-      tags: ["Vue.js", "Vuex", "Firebase", "Material Design"],
-      link: "/projects/task-manager",
-      image: "/p4.png",
+      name: 'Task Manager',
+      tags: ['Vue.js', 'Vuex', 'Firebase', 'Material Design'],
+      link: '/projects/task-manager',
+      image: '/p4.png',
     },
   ];
 

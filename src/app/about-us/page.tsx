@@ -1,44 +1,44 @@
-import logoPart01 from "@/assets/logo/logoPart01.svg";
-import logoPart02 from "@/assets/logo/logoPart02.svg";
+import logoPart01 from '@/assets/logo/logoPart01.svg';
+import logoPart02 from '@/assets/logo/logoPart02.svg';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import Image from "next/image";
+} from '@/components/ui/accordion';
+import Image from 'next/image';
 
 const AboutUs = () => {
   const faqData = [
     {
-      question: "What types of businesses do you work with?",
+      question: 'What types of businesses do you work with?',
       answer:
-        "At BigMod Technologies, we work with businesses of all sizes—from startups to large enterprises—across a variety of industries. Our services are adaptable to meet the unique challenges and goals of each client, ensuring that our solutions fit their specific needs.",
+        'At BigMod Technologies, we work with businesses of all sizes—from startups to large enterprises—across a variety of industries. Our services are adaptable to meet the unique challenges and goals of each client, ensuring that our solutions fit their specific needs.',
     },
     {
-      question: "How does your process work for new projects?",
+      question: 'How does your process work for new projects?',
       answer:
-        "Our process begins with a discovery phase, where we get to know your business goals, target audience, and project requirements. We then move through strategy development, design, development, and testing. We collaborate closely with you throughout, ensuring the project aligns with your vision every step of the way.",
+        'Our process begins with a discovery phase, where we get to know your business goals, target audience, and project requirements. We then move through strategy development, design, development, and testing. We collaborate closely with you throughout, ensuring the project aligns with your vision every step of the way.',
     },
     {
-      question: "What technologies do you specialize in?",
+      question: 'What technologies do you specialize in?',
       answer:
-        "We specialize in a wide range of technologies, including JavaScript frameworks (React, Angular, Vue), mobile development platforms (iOS, Android, Flutter), cloud solutions (AWS, Google Cloud, Azure), and DevOps tools (Docker, Kubernetes, Jenkins). Our team stays updated with the latest tools and trends to offer innovative solutions.",
+        'We specialize in a wide range of technologies, including JavaScript frameworks (React, Angular, Vue), mobile development platforms (iOS, Android, Flutter), cloud solutions (AWS, Google Cloud, Azure), and DevOps tools (Docker, Kubernetes, Jenkins). Our team stays updated with the latest tools and trends to offer innovative solutions.',
     },
     {
-      question: "Can you help us with branding and digital marketing?",
+      question: 'Can you help us with branding and digital marketing?',
       answer:
-        "Absolutely! Beyond software and app development, we provide digital branding services that include logo design, brand identity creation, graphic design, and strategic digital marketing. Our goal is to create a cohesive brand experience that resonates with your target audience.",
+        'Absolutely! Beyond software and app development, we provide digital branding services that include logo design, brand identity creation, graphic design, and strategic digital marketing. Our goal is to create a cohesive brand experience that resonates with your target audience.',
     },
     {
-      question: "How long does a typical project take?",
+      question: 'How long does a typical project take?',
       answer:
-        "Project timelines vary based on the complexity and scope of the work. For example, a web or mobile app might take anywhere from a few weeks to several months. After an initial consultation, we’ll provide a tailored timeline to meet your project’s specific needs.",
+        'Project timelines vary based on the complexity and scope of the work. For example, a web or mobile app might take anywhere from a few weeks to several months. After an initial consultation, we’ll provide a tailored timeline to meet your project’s specific needs.',
     },
     {
-      question: "Do you offer post-launch support and maintenance?",
+      question: 'Do you offer post-launch support and maintenance?',
       answer:
-        "Yes, we offer post-launch support and maintenance packages to ensure your digital products continue to perform optimally. We can help with updates, troubleshooting, and adding new features as your business grows.",
+        'Yes, we offer post-launch support and maintenance packages to ensure your digital products continue to perform optimally. We can help with updates, troubleshooting, and adding new features as your business grows.',
     },
     // {
     //   question:
@@ -54,24 +54,24 @@ const AboutUs = () => {
   ];
   const services = [
     {
-      title: "Web App Development",
+      title: 'Web App Development',
       description:
-        "BigMod Technologies creates custom web applications tailored to each client’s unique needs. Our web apps are designed to enhance productivity, engagement, and functionality—positioning your business to succeed in the digital marketplace.",
+        'BigMod Technologies creates custom web applications tailored to each client’s unique needs. Our web apps are designed to enhance productivity, engagement, and functionality—positioning your business to succeed in the digital marketplace.',
     },
     {
-      title: "Mobile App Development",
+      title: 'Mobile App Development',
       description:
-        "From concept to launch, our mobile app development services are crafted to connect your brand with users on the go. Whether iOS or Android, we build applications that are as engaging as they are functional, driving your business’s digital reach.",
+        'From concept to launch, our mobile app development services are crafted to connect your brand with users on the go. Whether iOS or Android, we build applications that are as engaging as they are functional, driving your business’s digital reach.',
     },
     {
-      title: "Cloud and DevOps Services",
+      title: 'Cloud and DevOps Services',
       description:
-        "Streamline your operations with our Cloud and DevOps solutions. BigMod Technologies helps clients optimize their infrastructure, embrace scalability, and maintain agile workflows to support continuous growth and innovation.",
+        'Streamline your operations with our Cloud and DevOps solutions. BigMod Technologies helps clients optimize their infrastructure, embrace scalability, and maintain agile workflows to support continuous growth and innovation.',
     },
     {
-      title: "Graphic Design",
+      title: 'Graphic Design',
       description:
-        "Our creative graphic design team transforms ideas into impactful visual experiences. From brand identity to marketing materials, we deliver designs that capture attention and resonate with your audience.",
+        'Our creative graphic design team transforms ideas into impactful visual experiences. From brand identity to marketing materials, we deliver designs that capture attention and resonate with your audience.',
     },
   ];
 
@@ -120,13 +120,16 @@ const AboutUs = () => {
         </div>
         <div className="w-6/12 mx-auto px-10 pb-6 pt-10 text-start ">
           <div className="border border-white/15 rounded-lg">
-            <Accordion type="single" collapsible>
+            <Accordion
+              type="single"
+              collapsible
+            >
               {faqData.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
                   className={`${
-                    faqData.length !== index + 1 && "border-b border-white/15"
+                    faqData.length !== index + 1 && 'border-b border-white/15'
                   }`}
                 >
                   <AccordionTrigger>

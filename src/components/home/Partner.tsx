@@ -1,11 +1,11 @@
-import partnerCompanyLogo01 from "@/assets/partner/partner-1.png";
-import partnerCompanyLogo02 from "@/assets/partner/partner-2.png";
-import partnerCompanyLogo03 from "@/assets/partner/partner-3.png";
-import partnerCompanyLogo05 from "@/assets/partner/partner-5.png";
-import partnerCompanyLogo06 from "@/assets/partner/partner-6.png";
-import partnerCompanyLogo07 from "@/assets/partner/partner-7.png";
-import partnerCompanyLogo08 from "@/assets/partner/partner-8.png";
-import Image from "next/image";
+import partnerCompanyLogo01 from '@/assets/partner/partner-1.png';
+import partnerCompanyLogo02 from '@/assets/partner/partner-2.png';
+import partnerCompanyLogo03 from '@/assets/partner/partner-3.png';
+import partnerCompanyLogo05 from '@/assets/partner/partner-5.png';
+import partnerCompanyLogo06 from '@/assets/partner/partner-6.png';
+import partnerCompanyLogo07 from '@/assets/partner/partner-7.png';
+import partnerCompanyLogo08 from '@/assets/partner/partner-8.png';
+import Image from 'next/image';
 
 // Array of partner logos
 const partnerLogos = [
@@ -33,7 +33,10 @@ const Partner: React.FC = () => {
   return (
     <div className="space-y-6">
       {rows.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex justify-center gap-16">
+        <div
+          key={rowIndex}
+          className="flex justify-center gap-16"
+        >
           {row.map((logo, index) => (
             <Image
               key={index}

@@ -1,12 +1,12 @@
-import Image from "next/image";
-import newsletterImage from "@/assets/bg/subscribe-bg.jpg";
-import partnerCompanyLogo01 from "@/assets/partner/partner-1.png";
-import partnerCompanyLogo02 from "@/assets/partner/partner-2.png";
-import partnerCompanyLogo03 from "@/assets/partner/partner-3.png";
-import partnerCompanyLogo05 from "@/assets/partner/partner-5.png";
-import partnerCompanyLogo06 from "@/assets/partner/partner-6.png";
-import partnerCompanyLogo07 from "@/assets/partner/partner-7.png";
-import partnerCompanyLogo08 from "@/assets/partner/partner-8.png";
+import Image from 'next/image';
+import newsletterImage from '@/assets/bg/subscribe-bg.jpg';
+import partnerCompanyLogo01 from '@/assets/partner/partner-1.png';
+import partnerCompanyLogo02 from '@/assets/partner/partner-2.png';
+import partnerCompanyLogo03 from '@/assets/partner/partner-3.png';
+import partnerCompanyLogo05 from '@/assets/partner/partner-5.png';
+import partnerCompanyLogo06 from '@/assets/partner/partner-6.png';
+import partnerCompanyLogo07 from '@/assets/partner/partner-7.png';
+import partnerCompanyLogo08 from '@/assets/partner/partner-8.png';
 
 // Array of partner logos
 const partnerLogos = [
@@ -27,9 +27,9 @@ const Newsletter: React.FC = () => {
         className="relative bg-[#1a1a1a] p-6 md:p-8 lg:p-12 lg:py-24 flex items-center justify-center text-center lg:text-left"
         style={{
           background: `url('${newsletterImage.src}')`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         <div className="relative z-10 max-w-md mx-auto lg:mx-0">
@@ -39,8 +39,8 @@ const Newsletter: React.FC = () => {
             <span
               className="block"
               style={{
-                WebkitTextStroke: "1px white",
-                WebkitTextFillColor: "transparent",
+                WebkitTextStroke: '1px white',
+                WebkitTextFillColor: 'transparent',
               }}
             >
               NEWSLETTER

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface TitleArrowType {
   width?: string | number;
@@ -7,8 +7,8 @@ interface TitleArrowType {
 }
 
 const TitleArrow: React.FC<TitleArrowType> = ({
-  width = "18",
-  height = "13",
+  width = '18',
+  height = '13',
   className,
 }) => {
   return (

@@ -4,7 +4,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select';
 
 const page = () => {
   return (
@@ -21,7 +21,10 @@ const page = () => {
                 Start a Project
               </h2>
               <div className="py-6 space-y-2">
-                <label className="block text-sm" htmlFor="name">
+                <label
+                  className="block text-sm"
+                  htmlFor="name"
+                >
                   Full Name*
                 </label>
                 <input
@@ -33,7 +36,10 @@ const page = () => {
               </div>
               <div className="md:flex items-center gap-3">
                 <div className="pb-6 space-y-2 w-full md:w-1/2">
-                  <label className="block text-sm" htmlFor="company">
+                  <label
+                    className="block text-sm"
+                    htmlFor="company"
+                  >
                     Company name
                   </label>
                   <input
@@ -44,7 +50,10 @@ const page = () => {
                   />
                 </div>
                 <div className="pb-6 space-y-2 w-full md:w-1/2">
-                  <label className="block text-sm" htmlFor="email">
+                  <label
+                    className="block text-sm"
+                    htmlFor="email"
+                  >
                     Email*
                   </label>
                   <input
@@ -57,7 +66,10 @@ const page = () => {
               </div>
               <div className="md:flex items-center gap-3">
                 <div className="pb-6 space-y-2 w-full md:w-1/2">
-                  <label className="block text-sm" htmlFor="service">
+                  <label
+                    className="block text-sm"
+                    htmlFor="service"
+                  >
                     Service required*
                   </label>
                   <Select>
@@ -80,7 +92,10 @@ const page = () => {
                   </Select>
                 </div>
                 <div className="pb-6 space-y-2 w-full md:w-1/2">
-                  <label className="block text-sm" htmlFor="budget">
+                  <label
+                    className="block text-sm"
+                    htmlFor="budget"
+                  >
                     Project budget*
                   </label>
                   <Select>
@@ -101,7 +116,10 @@ const page = () => {
                 </div>
               </div>
               <div className="pb-6 space-y-2">
-                <label className="block text-sm" htmlFor="details">
+                <label
+                  className="block text-sm"
+                  htmlFor="details"
+                >
                   Project details*
                 </label>
                 <textarea

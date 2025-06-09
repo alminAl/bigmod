@@ -1,4 +1,4 @@
-import Arrow from "../shared/icons/Arrow";
+import Arrow from '../shared/icons/Arrow';
 
 const Hero: React.FC = () => {
   return (
@@ -9,10 +9,18 @@ const Hero: React.FC = () => {
       <div className="text-center md:text-left">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
           <button className="flex items-center gap-2 md:gap-3 rounded-full py-2.5 px-4 md:px-6 border">
-            <span>About Us</span> <Arrow width={14} height={14} />
+            <span>About Us</span>{' '}
+            <Arrow
+              width={14}
+              height={14}
+            />
           </button>
           <button className="flex items-center gap-2 md:gap-3 rounded-full py-2.5 px-4 md:px-6 border">
-            <span>How We Operate</span> <Arrow width={14} height={14} />
+            <span>How We Operate</span>{' '}
+            <Arrow
+              width={14}
+              height={14}
+            />
           </button>
         </div>
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-semibold pt-6 leading-tight md:leading-none">

@@ -1,7 +1,7 @@
-import React from "react";
-import LatestStories from "./_components/LatestStories";
-import { StaffPicks } from "./_components/StaffPicks";
-import Contact from "@/components/home/Contact";
+import React from 'react';
+import LatestStories from './_components/LatestStories';
+import { StaffPicks } from './_components/StaffPicks';
+import Contact from '@/components/home/Contact';
 
 const Blogs = () => {
   return (

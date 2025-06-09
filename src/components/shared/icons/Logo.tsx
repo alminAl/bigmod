@@ -5,8 +5,8 @@ interface LogoIconProps {
 }
 
 const Logo: React.FC<LogoIconProps> = ({
-  width = "20",
-  height = "20",
+  width = '20',
+  height = '20',
   className,
 }) => {
   return (
@@ -60,7 +60,10 @@ const Logo: React.FC<LogoIconProps> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#10A8F1" />
-          <stop offset="1" stopColor="#64FFE7" />
+          <stop
+            offset="1"
+            stopColor="#64FFE7"
+          />
         </linearGradient>
         <linearGradient
           id="paint1_linear_52_59"
@@ -71,7 +74,10 @@ const Logo: React.FC<LogoIconProps> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#6F3AFA" />
-          <stop offset="1" stopColor="#B473F3" />
+          <stop
+            offset="1"
+            stopColor="#B473F3"
+          />
         </linearGradient>
       </defs>
     </svg>

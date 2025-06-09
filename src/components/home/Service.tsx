@@ -1,33 +1,33 @@
-import Arrow from "../shared/icons/Arrow";
+import Arrow from '../shared/icons/Arrow';
 
 const services = [
   {
     id: 1,
-    title: "Web App Development",
+    title: 'Web App Development',
     description:
-      "Bigmod Technologies crafts bespoke web apps to propel your business.",
-    link: "/services/web-app-development",
+      'Bigmod Technologies crafts bespoke web apps to propel your business.',
+    link: '/services/web-app-development',
   },
   {
     id: 2,
-    title: "Mobile Apps Development",
+    title: 'Mobile Apps Development',
     description:
-      "Bigmod Technologies: Tailored mobile apps to boost your business.",
-    link: "/services/mobile-app-development",
+      'Bigmod Technologies: Tailored mobile apps to boost your business.',
+    link: '/services/mobile-app-development',
   },
   {
     id: 3,
-    title: "Cloud and DevOps Services",
+    title: 'Cloud and DevOps Services',
     description:
-      "Bigmod Technologies: Cloud and DevOps solutions for agile business operations.",
-    link: "/services/cloud-devops",
+      'Bigmod Technologies: Cloud and DevOps solutions for agile business operations.',
+    link: '/services/cloud-devops',
   },
   {
     id: 4,
-    title: "Graphic Design",
+    title: 'Graphic Design',
     description:
-      "Bigmod Technologies: Creative graphic design solutions for impactful brand visuals.",
-    link: "/services/graphic-design",
+      'Bigmod Technologies: Creative graphic design solutions for impactful brand visuals.',
+    link: '/services/graphic-design',
   },
 ];
 
@@ -57,7 +57,11 @@ const Service: React.FC = () => {
                 href={service.link}
                 className="text-primary_two hover:underline mt-4  flex items-center gap-4"
               >
-                <span>Read more</span> <Arrow width={14} height={14} />
+                <span>Read more</span>{' '}
+                <Arrow
+                  width={14}
+                  height={14}
+                />
               </a>
             </div>
           ))}

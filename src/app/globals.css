@@ -46,7 +46,7 @@ html {
 .holder::before,
 .holder::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 1.25em;
   height: 1.25em;
   background: transparent;
@@ -92,7 +92,7 @@ html {
 
 .features-count:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
   height: 100%;
@@ -107,7 +107,7 @@ html {
 
 .newsletter:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
   right: 0;

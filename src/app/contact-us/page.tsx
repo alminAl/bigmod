@@ -1,10 +1,13 @@
-import Title from "@/components/shared/title/Title";
-import contactBg from "@/assets/location.png";
+import Title from '@/components/shared/title/Title';
+import contactBg from '@/assets/location.png';
 
 const ContactUs = () => {
   return (
     <div>
-      <Title title="Contact Us" url="/contact-us" />
+      <Title
+        title="Contact Us"
+        url="/contact-us"
+      />
       <div className="container mx-auto">
         <div className="py-20">
           <p className="">DIT Road, 3rd Floor, West Rampura,</p>
@@ -14,8 +17,8 @@ const ContactUs = () => {
           className=""
           style={{
             background: `url(${contactBg.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
           }}
         >
           <div className="grid grid-cols-3">
@@ -25,7 +28,10 @@ const ContactUs = () => {
               <div className="bg-white text-black py-12 px-10 -mt-16">
                 <h2 className="text-2xl font-semibold">Contact.</h2>
                 <div className="py-6 space-y-2">
-                  <label className="block text-xs" htmlFor="name">
+                  <label
+                    className="block text-xs"
+                    htmlFor="name"
+                  >
                     Your Name:
                   </label>
                   <input
@@ -36,7 +42,10 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="pb-6 space-y-2">
-                  <label className="block text-xs" htmlFor="email">
+                  <label
+                    className="block text-xs"
+                    htmlFor="email"
+                  >
                     Your Email:
                   </label>
                   <input
@@ -47,7 +56,10 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="pb-6 space-y-2">
-                  <label className="block text-xs" htmlFor="email">
+                  <label
+                    className="block text-xs"
+                    htmlFor="email"
+                  >
                     Message:
                   </label>
                   <textarea

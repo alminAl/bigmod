@@ -1,54 +1,59 @@
-import React from "react";
-import Logo from "../icons/Logo";
-import Link from "next/link";
-import FacebookIcon from "../icons/Facebook";
-import TwitterIcon from "../icons/TwitterIcon";
-import PinterestIcon from "../icons/PinterestIcon";
-import footerBg from "@/assets/bg/footer-bg.png";
+import React from 'react';
+import Logo from '../icons/Logo';
+import Link from 'next/link';
+import FacebookIcon from '../icons/Facebook';
+import TwitterIcon from '../icons/TwitterIcon';
+import PinterestIcon from '../icons/PinterestIcon';
+import footerBg from '@/assets/bg/footer-bg.png';
 
 const Footer = () => {
   const socialLinks = [
     {
       id: 1,
-      name: "Facebook",
+      name: 'Facebook',
       icon: <FacebookIcon />,
-      url: "https://facebook.com",
+      url: 'https://facebook.com',
     },
     {
       id: 2,
-      name: "Twitter",
-      icon: <TwitterIcon height={20} width={20} />,
-      url: "https://twitter.com",
+      name: 'Twitter',
+      icon: (
+        <TwitterIcon
+          height={20}
+          width={20}
+        />
+      ),
+      url: 'https://twitter.com',
     },
     {
       id: 3,
-      name: "Pinterest",
+      name: 'Pinterest',
       icon: <PinterestIcon />,
-      url: "https://pinterest.com",
+      url: 'https://pinterest.com',
     },
   ];
 
   const services = [
-    { id: 1, name: "Strategy & Research", route: "/strategy-research" },
-    { id: 2, name: "Web Development", route: "/web-development" },
-    { id: 3, name: "Web Solution", route: "/web-solution" },
-    { id: 4, name: "Digital Marketing", route: "/digital-marketing" },
-    { id: 5, name: "App Design", route: "/app-design" },
-    { id: 6, name: "App Development", route: "/app-development" },
+    { id: 1, name: 'Strategy & Research', route: '/strategy-research' },
+    { id: 2, name: 'Web Development', route: '/web-development' },
+    { id: 3, name: 'Web Solution', route: '/web-solution' },
+    { id: 4, name: 'Digital Marketing', route: '/digital-marketing' },
+    { id: 5, name: 'App Design', route: '/app-design' },
+    { id: 6, name: 'App Development', route: '/app-development' },
   ];
   const navigationLinks = [
-    { id: 1, name: "About Us", route: "/about-us" },
-    { id: 2, name: "Services", route: "/services" },
-    { id: 3, name: "Project", route: "/project" },
-    { id: 4, name: "Blog", route: "/blog" },
-    { id: 5, name: "Career", route: "/career" },
-    { id: 6, name: "Pricing Plan", route: "/pricing-plan" },
+    { id: 1, name: 'About Us', route: '/about-us' },
+    { id: 2, name: 'Services', route: '/services' },
+    { id: 3, name: 'Project', route: '/project' },
+    { id: 4, name: 'Blog', route: '/blog' },
+    { id: 5, name: 'Career', route: '/career' },
+    { id: 6, name: 'Pricing Plan', route: '/pricing-plan' },
   ];
   const policies = [
-    { id: 1, name: "Privacy Policy", route: "/privacy-policy" },
-    { id: 2, name: "Terms of Use", route: "/terms-of-use" },
-    { id: 3, name: "Support Policy", route: "/support-policy" },
-    { id: 4, name: "Terms of Service", route: "/terms-of-service" },
+    { id: 1, name: 'Privacy Policy', route: '/privacy-policy' },
+    { id: 2, name: 'Terms of Use', route: '/terms-of-use' },
+    { id: 3, name: 'Support Policy', route: '/support-policy' },
+    { id: 4, name: 'Terms of Service', route: '/terms-of-service' },
   ];
 
   return (
@@ -59,7 +64,10 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {/* Office Section */}
         <div>
-          <Logo width={165} className="h-16" />
+          <Logo
+            width={165}
+            className="h-16"
+          />
           <h2 className="text-xl font-semibold mt-4">Office</h2>
           <div className="w-10 h-[2px] bg-gradient-to-tr from-secondary_one to-primary_two rounded-full mb-5"></div>
           <p className="text-sm">
@@ -88,7 +96,10 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             {services.map((service) => (
               <li key={service.id}>
-                <Link href={service.route} className="">
+                <Link
+                  href={service.route}
+                  className=""
+                >
                   {service.name}
                 </Link>
               </li>
@@ -103,7 +114,10 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             {navigationLinks.map((link) => (
               <li key={link.id}>
-                <Link href={link.route} className="hover:underline">
+                <Link
+                  href={link.route}
+                  className="hover:underline"
+                >
                   {link.name}
                 </Link>
               </li>
@@ -132,7 +146,10 @@ const Footer = () => {
         <div className="flex space-x-4 mt-4 md:mt-0 text-sm flex-wrap">
           {policies.map((policy) => (
             <li key={policy.id}>
-              <Link href={policy.route} className=" hover:underline">
+              <Link
+                href={policy.route}
+                className=" hover:underline"
+              >
                 {policy.name}
               </Link>
             </li>

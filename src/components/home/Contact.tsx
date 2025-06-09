@@ -1,4 +1,4 @@
-import contactBg from "@/assets/bg/contact-bg.png";
+import contactBg from '@/assets/bg/contact-bg.png';
 
 const Contact = () => {
   return (
@@ -6,10 +6,10 @@ const Contact = () => {
       className=""
       style={{
         background: `url('${contactBg.src}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100%",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100%',
       }}
     >
       <div className="container mx-auto py-32 relative px-4 sm:px-6 lg:px-8 ">
@@ -28,9 +28,9 @@ const Contact = () => {
                 <span
                   className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold"
                   style={{
-                    WebkitTextStroke: "2px #B473F3",
-                    WebkitTextFillColor: "transparent",
-                    color: "transparent",
+                    WebkitTextStroke: '2px #B473F3',
+                    WebkitTextFillColor: 'transparent',
+                    color: 'transparent',
                   }}
                 >
                   PROJECT

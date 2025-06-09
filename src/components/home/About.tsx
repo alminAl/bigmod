@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import teamImage from "@/assets/bg/abouut-bg.jpg";
-import mission from "@/assets/mission.svg";
-import progress90image from "@/assets/progress90.png";
-import progress85image from "@/assets/progress85.png";
-import Arrow from "../shared/icons/Arrow";
-import Link from "next/link";
-import counterBg from "@/assets/bg/counter-bg.png";
+import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import teamImage from '@/assets/bg/abouut-bg.jpg';
+import mission from '@/assets/mission.svg';
+import progress90image from '@/assets/progress90.png';
+import progress85image from '@/assets/progress85.png';
+import Arrow from '../shared/icons/Arrow';
+import Link from 'next/link';
+import counterBg from '@/assets/bg/counter-bg.png';
 
 const About: React.FC = () => {
   const [projectsCompleted, setProjectsCompleted] = useState<number>(0);
@@ -115,7 +115,11 @@ const About: React.FC = () => {
               className="bg-gradient-to-tr from-secondary_one to-secondary_two text-white px-6 md:px-8 py-2 md:py-3 rounded-full inline-block mt-4"
             >
               <div className="flex items-center justify-center gap-2 md:gap-4">
-                <span>About More</span> <Arrow width={13} height={13} />
+                <span>About More</span>{' '}
+                <Arrow
+                  width={13}
+                  height={13}
+                />
               </div>
             </Link>
           </div>
@@ -164,9 +168,9 @@ const About: React.FC = () => {
           className="mt-12 md:mt-16 bg-[#160044] text-white rounded-lg py-10 md:py-16 px-4 md:px-5 grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-8 text-center relative features-count"
           style={{
             background: `url(${counterBg.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            position: "relative",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            position: 'relative',
           }}
         >
           <div>
